@@ -16,7 +16,7 @@
   <nav class="manager bg-light d-flex flex-column justify-content-between">
     <div>
       <h1 class="logo mb-6"><a class="d-block" href="index.html">ANSWER</a></h1>
-      <ul class="list-unstyled flex-column fw-bold">
+      <ul class="list-unstyled fw-bold">
         <li class="mb-4">
           <a class="manager-link link-dark d-flex align-items-center" aria-current="page" href="#">
             <span class="material-icons me-3">
@@ -34,7 +34,7 @@
           </a>
         </li>
         <li class="mb-4">
-          <a class="manager-link link-dark d-flex align-items-center" href="assignment.html">
+          <a class="manager-link link-dark d-flex align-items-center <%- current == 'assignment'? 'active' : '' %> " href="assignment.html">
             <span class="material-icons me-3">
               assignment
               </span>
@@ -50,7 +50,7 @@
           </a>
         </li>
         <li class="mb-4">
-          <a class="manager-link link-success active d-flex align-items-center" href="index.html">
+          <a class="manager-link link-dark d-flex align-items-center <%- current == 'index'? 'active' : '' %> " href="index.html">
             <span class="material-icons me-3">
               supervisor_account
               </span>

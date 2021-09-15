@@ -14,15 +14,19 @@
     &-link{
         padding: 0 32px 0 0;
         position: relative;
-        &:hover{
+        &:hover {
             color: $success;
         }
-        &.active::before{
+        &.active{
+            color: $success;
+            &::before{
             content: "";
             position: absolute;
+            color: $success;
             left: -32px;
             height: 32px;
             border-left: 4px solid $success;
+            }
         }
     }
     &-profile{

@@ -21,19 +21,19 @@ current: index
 
         <div class="d-flex">
             <button class="btn-icon" type="button">
-                <span class="material-icons me-4">
+                <span class="material-icons align-middle me-4">
                     search
                     </span>
             </button>
             <button class="btn-icon" type="button">
-                <span class="material-icons">
+                <span class="material-icons align-middle">
                     notifications_active
                     </span>
             </button>
         </div>
     </div>
     
-    <table class="table">
+    <table class="table table-hover">
         <thead>
           <tr>
             <th class="col-md-1" scope="col">
@@ -236,7 +236,7 @@ current: index
       <nav>
         <ul class="pagination justify-content-end mb-0">
           <li class="page-item">
-            <a class="page-link link-success" href="#" aria-label="Previous">
+            <a class="page-link link-success px-1" href="#" aria-label="Previous">
               <span class="material-icons d-block">
                 chevron_left
                 </span>
@@ -252,7 +252,7 @@ current: index
               <a class="page-link link-dark" href="#">3</a>
             </li>
           <li class="page-item">
-            <a class="page-link link-success" href="#" aria-label="Next">
+            <a class="page-link link-success px-1" href="#" aria-label="Next">
               <span class="material-icons d-block">
                 chevron_right
                 </span>
@@ -291,7 +291,7 @@ current: index
             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
               <div class="accordion-body p-0 mt-6 d-flex justify-content-between">
                 <button type="button" class="btn btn-outline-danger fw-bold py-2 px-6">Deactivate</button>
-                <button type="button" class="btn btn-success fw-bold py-2 px-6">Edit</button>
+                <button type="button" class="btn btn-success fw-bold py-2 px-6" data-bs-toggle="modal" data-bs-target="#adminEditModal">Edit</button>
               </div>
             </div>
           </div>
@@ -318,7 +318,7 @@ current: index
               <input class="bg-light border-0 p-3 mb-3" type="text" id="name" name="name" value="Emir Wicks" readonly>
             </div>
             <div class="d-flex flex-column">
-              <label for="name" class="fz-5 mb-1">Email</label>
+              <label for="email" class="fz-5 mb-1">Email</label>
               <input class="bg-light border-0 p-3" type="email" id="email" name="email" value="emir.wicks@mail.com" readonly>
             </div>
           </div>
@@ -340,7 +340,6 @@ current: index
           <div class="py-4 border-bottom">
             <h5 class="fz-2 fw-bold mb-3">Access Level</h5>
             <div>
-              <label for="accessLevel"></label>
               <select name="accessLevel" id="accessLevel" class="w-100 p-3 rounded-1">
                 <option value="Admin">Admin</option>
               </select>
@@ -409,7 +408,7 @@ current: index
               <input class="bg-transparent rounded-1 p-3 mb-3" type="text" id="name" name="name">
             </div>
             <div class="d-flex flex-column">
-              <label for="name" class="fz-5 mb-1">Email</label>
+              <label for="email" class="fz-5 mb-1">Email</label>
               <input class="bg-transparent rounded-1 p-3" type="email" id="email" name="email">
             </div>
           </div>
@@ -430,7 +429,6 @@ current: index
           <div class="py-4 border-bottom">
             <h5 class="fz-2 fw-bold mb-3">Access Level</h5>
             <div>
-              <label for="accessLevel"></label>
               <select name="accessLevel" id="accessLevel" class="w-100 p-3 rounded-1">
                 <option value="" disabled selected hidden>-Choose access level-</option>
                 <option value="Admin">Admin</option>
