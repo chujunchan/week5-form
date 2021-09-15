@@ -134,12 +134,15 @@ a {
     position: relative; }
     .manager-link:hover {
       color: #198754; }
-    .manager-link.active::before {
-      content: "";
-      position: absolute;
-      left: -32px;
-      height: 32px;
-      border-left: 4px solid #198754; }
+    .manager-link.active {
+      color: #198754; }
+      .manager-link.active::before {
+        content: "";
+        position: absolute;
+        color: #198754;
+        left: -32px;
+        height: 32px;
+        border-left: 4px solid #198754; }
   .manager-profile img {
     width: 40px;
     height: 40px;
